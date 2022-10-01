@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    left: 42%;
+    top: 60px;
+
+}
+.container{
+    
+    border: 3px groove black;
+    width: 850px;
+    height: 350px; 
+    
+    display: grid;
+    
+    grid-template-rows: 90px repeat(6,1fr) ;
+    grid-template-columns: repeat(9, 1fr);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-top: 100px;
+    border-collapse:separate;
+   
+    
+}
+.grid-box{
+    
+    border-collapse: separate;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.td{
+    font-weight: 100;
+}
+.lunch{
+   grid-row: 2/8;
+   grid-column-end: 6;
+   text-transform: uppercase;
+}
+.lab{
+    grid-column: 6/9;
+}
+.lab1{
+    grid-column: 2/5;
+
+}
+.lib{
+    grid-column: 7/10;
+
+}
+.lab2{
+    grid-column: 6/9;
+}
+.lab3{
+    grid-column: 2/5;
+}
+.seminar{
+    grid-column: 6/9;
+}
